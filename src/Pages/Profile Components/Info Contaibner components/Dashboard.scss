@@ -1,0 +1,29 @@
+.dashboard-container{
+    .dashboard-navbar{
+        height: 10vh;
+        width: 100%;
+        border-bottom: 1px lightgray solid;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        ul{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+            li{
+                list-style: none;
+                font-family: 'Poppins', sans-serif;
+                cursor: pointer;
+                &:hover{
+                    border-bottom: #8271ef solid 2px;
+                }
+            }
+            .active{
+                color: #8271ef;
+                border-bottom: #8271ef solid 2px;
+            }
+        }
+    }
+
+}

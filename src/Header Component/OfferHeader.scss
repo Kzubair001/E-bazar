@@ -1,0 +1,13 @@
+.offerHeader-container{
+    flex: 1;
+    height: 6vh;
+    background-color: #7d6edd;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    p{
+        font-family: 'Poppins', sans-serif;
+        color: white;
+        display: inline;
+    }
+}

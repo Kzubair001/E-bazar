@@ -1,0 +1,28 @@
+.home-section-2{
+    padding: 10vh 4%;
+    display: flex;
+    height: 80vh;
+    justify-content: center;
+    align-items: center;
+    .div-1{
+        flex-basis: 50%!important;
+        padding-right: 30px;
+        h1{
+            font-size: 60px;
+            font-family: 'Poppins', sans-serif;
+        }
+        p{
+            font-family: 'Poppins', sans-serif;
+            
+        }
+    }
+    .div-2{
+        flex-basis: 50%!important;
+        img{
+            width: 85vh;
+            box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+            border: lightgray solid 1px;
+        }
+
+    }
+}

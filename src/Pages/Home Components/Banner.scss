@@ -1,0 +1,127 @@
+.banner-container{
+    background-color: #7e6de8;
+    height: 80vh;
+    display: flex;
+    padding: 20px 4%;
+    .div-1{
+        flex-basis: 50%;
+        display: flex;
+        align-items: center;
+        button{
+            padding: 10px 20px;
+            font-size: 20px;
+            border: none;   
+            margin-right: 20px;
+            cursor: pointer;
+            transition: 0.4s;
+            p{
+                font-weight: 700;
+                display: inline;
+            }
+        }
+        .signup-btn{
+            background-color: #ffffff;
+            border:#413e57 solid 2px ;
+            border-radius: 5px;
+            p{
+                color:#413e57;
+            }
+            &:hover{
+                background-color: #686868;
+                p{
+                    color: white;
+                }
+            }
+        }
+        .p{
+            color: #413e57;
+            padding: 0px 50px;
+        }
+        .browse-farm-btn{
+            background-color: transparent;
+            border-radius: 5px;
+            border: white 2px solid;
+            &:hover{
+                background-color:#413e57;
+                p{
+                    color: white;
+                }
+            }
+            p{
+                color: white;
+            }
+        }
+        h1{
+            font-size: 55px;
+            color: white;
+            display: inline;
+            span{
+                text-decoration: underline solid #7e6de8;
+            }
+        }
+        p{
+            font-size: 20px;
+            font-family: 'Varela Round', sans-serif;
+            color: white;
+            span{
+                font-weight: 600;
+            }
+        }
+        .create-store{
+            flex: 1;
+            height: 10vh;
+            background-color: white;
+            border-radius: 10px;
+            border:solid 2px #3e3579;
+            margin-top: 50px;
+            display: flex;
+            align-items: center;
+            position: relative;
+            p{
+                font-size: 15px;
+                padding: 5px 20px;
+                .text{
+                    font-weight: 600;
+                }
+            }
+            .border{
+                height: 70%;
+                width: 2px;
+                background-color: rgb(58, 58, 58);
+            }
+            .create-store-logo{
+                font-size: 25px;
+                padding: 0px 20px;
+                color: #413e57;
+            }
+            .farmer-logo{
+                position: absolute;
+                right: 0;
+                div{
+                    border-radius: 50%;
+                    background-color: #4e4491;
+                    border: #413e57 solid 2px;
+                    overflow: hidden;
+                    height: 50px;
+                    width: 50px;
+                    position: relative;
+                    z-index: 2;
+                    left: 24px;
+                    img{
+                        width: 100%;
+                    }
+                }
+                
+            }
+        }
+    }
+    .div-2{
+        flex-basis: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        img{
+            width: 90%;
+        }
+    }
+}

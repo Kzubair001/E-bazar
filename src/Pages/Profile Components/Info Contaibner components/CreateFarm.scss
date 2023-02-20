@@ -1,0 +1,108 @@
+.create-from-container{
+    position: relative;
+    width: 100%;
+    .c-3{
+        padding: 5vh 10vh;
+        h1{
+            color: rgb(66, 66, 66);
+            font-size: 50px;
+        }    
+    }
+    .progress-bar{
+        position: fixed;
+        width: 100%;
+        height: 2vh;
+        .progress-tracker{
+            height: 100%;
+            background-color: #6357b4;
+        }
+    }
+
+    .c-2{
+        background-color: #8271ef;
+        height: 82vh;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        .c-2-div{
+            width: 60%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+        }
+        h1{
+            color: white;
+            font-size: 100px;
+            margin: 0;
+            position: relative;
+            bottom: 15px;
+        }
+        p{
+            color: white;
+            font-size: 25px;
+            margin: 0;
+        }
+        button{
+            background-color: white;
+            margin-top: 20px;
+            border-radius: 24px;
+            border: none;
+            color: #8271ef;
+            font-weight: 600;
+            padding: 10px 25px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+    }
+    .c-1{
+        position: absolute;
+        z-index: 2;
+        background-color: #8271ef;
+        height: 82vh;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        .noti-div{
+            width: 50%;
+            margin-top: 20px;
+            background-color:#584baa;
+            border-radius: 22px;
+            padding: 5px 20px;
+            p{
+                color: white;
+            }
+            span{
+                color: rgb(225, 55, 55);
+                font-weight: 800;
+            }
+        }
+        h2{
+            color: white;
+        }
+        img{
+            border-radius: 50%;
+            background-color: #584baa;
+            width: 20vh;
+        }
+        .btn{
+            padding: 5px 20px;
+            background-color: white;
+            
+            border: none;
+            font-weight: 500;
+            color: rgb(49, 49, 49);
+            margin: 0px 10px;
+            border-radius: 22px;
+            font-size: 10px;
+            cursor: pointer;
+            h1{
+                display: inline;
+            }
+        }
+    }
+}

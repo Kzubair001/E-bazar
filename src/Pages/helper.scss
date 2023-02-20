@@ -1,0 +1,18 @@
+.helper{
+    display: flex;
+    height: 45%;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    .div-1{
+        flex-basis: 70%;
+        input{
+            padding: 15px 20px;
+            border-radius: 22px;
+            font-family: 'Poppins', sans-serif;
+            border: none;
+            border: solid lightgray 2px;
+            margin-top: 50px;
+            width: 45%;
+        }
+    }
+}

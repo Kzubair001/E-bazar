@@ -1,0 +1,115 @@
+.navbar-main{
+    position: sticky;
+}
+.navbar-container{
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+    flex: 1;
+    height: 10.5vh;
+    background-color: white;
+    padding: 0px 4%;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    z-index: 2;
+    .active-btn{
+        background-color: #7864f8;
+    }
+    .navbar-logo{
+        flex-basis: 20%;
+        display: flex;
+        align-items: center;
+        img{
+            width: 150px;
+        }
+    }
+    .links-list{
+        flex-basis: 80%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        ul{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+        li{
+          list-style: none;
+          .active{
+            color: #7864f8;
+        }
+        .cbs{
+            display: flex;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .cbs-featured{
+            font-size: 13px;
+            background-color: rgb(231, 231, 79);
+            padding:1px 10px;
+            border-radius: 20px;
+            margin-left: 5px;
+            position: relative;
+            height: fit-content;
+            width: fit-content;
+            font-family: 'Poppins', sans-serif;
+            top: -2px;
+        }
+          p{
+            font-size: 17px;
+            font-weight: 500;
+            color:#5C5589;
+            cursor: pointer;
+            transition: 0.4s;
+            &:hover{
+                color: #7864f8;
+            }
+          }  
+          
+        }
+        } 
+        .auth-button{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            .navbar-profile-div{
+                img{
+                    height: 30px;
+                    width: 30px;
+                    margin-right: 20px;
+                    border-radius: 50%;
+                    border: solid lightcyan 2px;
+                }
+                button{
+                   text-align: center;
+                   font-size: 14px;
+                }
+                p{
+                    display: inline;
+                }
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            button{
+                background-color: white;
+                border-radius: 20px;
+                padding: 10px 30px; 
+                font-size: 16px;
+                color:#7864f8;
+                border: solid 3px #7864f8;
+                cursor: pointer;
+                transition: 0.4s;
+                &:hover{
+                    background-color: #7864f8;
+                    color: white;
+                }
+              }
+              .profile-active-btn{
+                background-color: #7864f8;
+                color: white;
+              }
+        }
+    }
+}
+

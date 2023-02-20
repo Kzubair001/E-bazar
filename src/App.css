@@ -1,0 +1,52 @@
+.App {
+    text-align: center;
+}
+
+
+
+
+.page-container{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.content-wrap{
+    flex: 1;
+}
+
+.social-container {
+    background: #5856d6;
+    padding: 25px 50px;
+  }
+  a.social {
+    margin: 0 1rem;
+    transition: transform 250ms;
+    display: inline-block;
+  }
+  a.social:hover {
+    transform: translateY(-2px);
+  }
+
+  a.youtube {
+    color: #eb3223;
+  }
+  
+  a.facebook {
+    color: #0509ff;
+  }
+  
+  a.twitter {
+    color: #00acee ;
+  }
+  
+  a.instagram {
+    color: #e61a76 ;
+  } 
+
+.helper{
+  padding: 20px 50px;
+        display: flex;
+        margin-top: 20px;
+        margin-bottom: 40px;
+}
