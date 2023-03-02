@@ -1,10 +1,20 @@
 .ContactUs-container{
     padding: 5vh 10vh;
+    border: 0ch;
 
-    p{
+.form-label{
         font-size: 25px;
         color: rgba(0, 0, 0, 0.689);
         margin: 0;
+        
+    }
+    h2{
+        text-align: left;
+        color: black;
+        margin-left: 1;
     }
 
+}
+.link{
+    color: black;
 }
