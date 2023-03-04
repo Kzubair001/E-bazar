@@ -1,110 +1,150 @@
-.farm-container{
-    .info-banner{
-        overflow: hidden;
-        margin: 50px 0px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        gap: 50px;
-        flex-wrap: wrap;
-        .info-card{
-            transition: 0.4s;
-            &:hover{
-                box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
-            }
-            border: solid 2px lightgray;
-            border-radius: 10px;
-            display: flex;
-            gap: 20px;
-            .div-1{
-                img{
-                    width: 15rem;
-                }
-            }
-            .div-2{
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
-                max-width: 20rem;
-                margin: 0px 10px;
-                h3{
-                    margin: 0;
-                    font-family: 'Poppins', sans-serif;
-                    font-size: 25px;
-                    margin-bottom: 10px;
-                }
-                p{
-                    margin: 0;
-                    font-family: 'Poppins', sans-serif;
-                }
-            }
-        }
+$base-color-purple: #7c6de0;
+
+.farm-navbar {
+    padding: 1rem;
+    border-bottom: 1px solid lightgray;
+
+    input {
+        font-size: 20px;
+        border-radius: 22px;
+        font-family: 'Poppins', sans-serif;
     }
-    .farm-banner-main{
-        padding: 20px 50px;
+
+    .farm-nav {
         display: flex;
-        margin-top: 20px;
-        margin-bottom: 40px;
+        align-items: center;
+        justify-content: center;
+        padding: 0px 20px;
 
-        .div-1{
-            flex-basis: 70%;
-            input{
-                right: 3px;
-            }
-            .like-text{
-                margin: 0;
-                color: #4e40a6;
-                margin-top: 20px;
-            }
+        input {
+            border: $base-color-purple solid 2px;
+            border-radius: 22px;
+            // margin-left: 3rem;
+            height: 3rem;
+            font-size: 20px;
+            font-family: 'Poppins', sans-serif;
 
+            &:focus {
+                border: $base-color-purple solid 2px !important;
+            }
         }
-        .div-2{
-            flex-basis: 30%;
+
+        ul {
             display: flex;
-            justify-content: center;
             align-items: center;
-
-            .farm-card{
+            margin: 0px;
+            .activeCategory {
+                color: $base-color-purple;
                 box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
-                height: 55vh;
+            }
 
-                width:18vw;
-                border: solid lightgray 2px;
-                border-radius: 14px;
-                background-color: #7c6de0;
-                padding: 20px 20px;
-                .div-card-1{
-                height: 40%;
-                background-color: white;
-                border-radius: 14px;
-                overflow: hidden;
-                img{
-                    width: 100%;
-                    height: 100%;
+            padding: 0;
 
-                    height: 12rem;;
-                }
-                }
-                .div-card-2{
-                    p{
-                        color: white;
-                        font-weight: 700;
-                        font-size: 20px;
-                        font-size: 1rem;
-                    }
-                    .membership-btn{
-                        width: 100%;
-        }
-        .div-2{
-            flex-basis: 75%!important;
-
-            .product-container{
-                margin: 50px 20px;
+            li {
                 display: flex;
+                align-items: center;
+                justify-content: center;
+                height: 3rem;
+                padding: 0px 10px;
+                margin: 0.5rem;
+                width: fit-content;
+                border: 2px solid $base-color-purple;
+                border-radius: 20px;
+                color: rgb(71, 71, 71);
+                list-style: none;
+                font-family: 'Poppins', sans-serif;
+                font-size: 0.9rem;
+                cursor: pointer;
+                position: relative;
+                top: 0;
+                transition: 0.5s;
+
+                &:hover {
+                    color: #7c6de0;
+                    // left: 20px;
+                    top: 10px;
+                }
             }
         }
     }
 }
+
+.div-2{
+    flex-basis: 75%!important;
+    .product-container{
+        margin: 50px 20px;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 50px;
+        .product-card{
+            transition: 0.5s;
+            &:hover{
+                box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+            }
+           .card{
+            width: 18rem;
+            height: 28rem;
+            border: lightgray solid 2px;
+            border-radius: 6px;
+            overflow: hidden;
+           }
+           .card-div-1{
+            width: 100%;
+            height: 40%;
+            overflow: hidden;
+            display: flex;
+            justify-content: center;
+            img{
+                height: 100%;
+            }
+           }
+           .card-div-2{
+            width: 100%;
+            height: 60%;
+            .cart-view{
+                margin-top: 20px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                gap: 10px;
+                button{
+                    padding: 10px 50px;
+                    border-radius: 22px;
+                    background-color: white;
+                    width: fit-content;
+                    cursor: pointer;
+                    transition: 0.4s;
+                    &:hover{
+                        background-color:black;
+                        color: white;
+                    }
+                }
+                p{
+                    cursor: pointer;
+                }
+            }
+            p{
+                margin: 0;
+                font-family: 'Poppins', sans-serif;
+            }
+            .price{
+                font-family: 'Poppins', sans-serif;
+                font-size: 20px;
+                margin: 0;
+            }
+            .title{
+                font-size: 25px;
+                font-family: 'Poppins', sans-serif;
+                margin: 0;
+            }
+            .like-status{
+                display: flex;
+                justify-content: flex-start;
+                align-items: center;
+                color: rgb(74, 74, 74);
+            }
+           }
         }
     }
 }
